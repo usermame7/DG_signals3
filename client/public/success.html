@@ -33,7 +33,7 @@
     .confirmation-container {
       max-width: 28rem;
       width: 100%;
-      background: rgba(31, 41, 55, 0.5);
+      background: rgba(31, 41, 55, 0.51);
       backdrop-filter: blur(12px);
       border-radius: 1rem;
       padding: 2rem;
@@ -82,7 +82,7 @@
     src="https://www.facebook.com/tr?id=1232078642161908&ev=PageView&noscript=1" />
 </noscript>
 
-<div id="confirmation-box" class="confirmation-container">
+<div id="confirmation-box-dg3" class="confirmation-container">
   <div class="icon-circle">
     <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
@@ -91,33 +91,34 @@
   <h1>Success — Your Access Is Confirmed</h1>
   <p>You will be redirected to our Telegram channel shortly.</p>
   <div class="countdown">
-    Redirecting in <span id="timer">5</span> seconds...
+    Redirecting in <span id="timer-dg3">5</span> seconds...
   </div>
-  <button id="continue-btn">Continue Now</button>
+  <button id="continue-btn-dg3">Continue Now</button>
   <p class="footer-text">Click the button above if you're not redirected automatically.</p>
 </div>
 
-<div style="height:1px;opacity:0;" data-success-fp="v11" aria-hidden="true"></div>
+<div style="height:1px;opacity:0;" data-success-fp="dg3" aria-hidden="true"></div>
 
 <script>
-document.getElementById("continue-btn").addEventListener("click", function() {
+document.getElementById("continue-btn-dg3").addEventListener("click", function() {
   console.log("Lead confirmation interaction registered.");
-  window.location.href = "https://t.me/+qyTeUgsGYGdhY2M8";
+  window.location.href = "https://t.me/+aNuif5qjmz8xNzI0";
 });
 </script>
 
 <script>
   var timeLeft = 5;
-  var timerEl = document.getElementById("timer");
+  var timerEl = document.getElementById("timer-dg3");
   var countdown = setInterval(function() {
     timeLeft--;
     timerEl.textContent = timeLeft;
     if (timeLeft <= 0) {
       clearInterval(countdown);
-      window.location.href = "https://t.me/+qyTeUgsGYGdhY2M8";
+      window.location.href = "https://t.me/+aNuif5qjmz8xNzI0";
     }
   }, 1000);
 </script>
 
+<div style="opacity:0; height:1px;" data-fp="dg3" aria-hidden="true"></div>
 </body>
 </html>
